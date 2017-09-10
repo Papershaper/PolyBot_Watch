@@ -2,15 +2,15 @@
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 from utils import send_email, TempImage
-import argparse
+#import argparse
 import warnings
 import datetime
 import json
 import time
 import cv2
 
-# load some config
-conf = json.load(open(args["conf"]))
+# load some config, yes, need to replace path
+conf = json.load(open("/home/pi/polybot_watch/polybot_watch_conf.json"))
 
 # init the camera
 camera = PiCamera()
